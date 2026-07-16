@@ -105,13 +105,45 @@
 ===================================================== */
 
 @layer components {
+  /* ---------- Layout ---------- */
+
   .container {
     width: min(90%, var(--container-width));
     margin-inline: auto;
   }
 
+  /* ---------- Section ---------- */
+
   .section {
-    @apply py-16 lg:py-24;
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .first-section {
+    @apply pt-10 pb-16 md:pt-14 md:pb-20 lg:pt-16 lg:pb-24;
+  }
+
+  /* ---------- Section Heading ---------- */
+
+  .section-header {
+    @apply mb-10 text-center lg:mb-14;
+  }
+
+  /* ---------- Main Heading ---------- */
+
+  .section-title {
+    @apply text-3xl font-bold text-heading md:text-4xl lg:text-5xl;
+  }
+
+  /* ---------- Subtitle ---------- */
+
+  .section-subtitle {
+    @apply mb-3 block text-sm font-semibold uppercase tracking-[4px] text-secondary;
+  }
+
+  /* ---------- Description ---------- */
+
+  .section-description {
+    @apply mx-auto mt-5 max-w-3xl text-base leading-8 text-text;
   }
 }
 
@@ -122,5 +154,9 @@
 @layer utilities {
   .transition-default {
     transition: all 0.3s ease;
+  }
+
+  .shadow-primary {
+    box-shadow: var(--shadow-primary);
   }
 }

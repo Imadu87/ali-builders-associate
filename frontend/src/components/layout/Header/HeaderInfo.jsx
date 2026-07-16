@@ -4,7 +4,6 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 
 import { COMPANY } from "../../../constant/company";
-import logo from "../../../assets/images/logo.PNG";
 
 const HeaderInfo = () => {
     return (
@@ -14,7 +13,7 @@ const HeaderInfo = () => {
                 {/* Logo */}
                 <div className="shrink-0">
                     <img
-                        src={logo}
+                        src={COMPANY.logo}
                         alt={COMPANY.name}
                         className="h-16 lg:h-20 w-auto"
                     />

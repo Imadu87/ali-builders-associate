@@ -13,7 +13,7 @@ import { FOOTER_SERVICES } from "../../../constant/footerServices";
 const Footer = () => {
   return (
     <footer className="bg-primary text-white">
-      <div className="container py-16">
+      <div className="container px-5 py-14 sm:py-16 lg:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           {/* About */}
 
