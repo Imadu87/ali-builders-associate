@@ -1,9 +1,11 @@
-import React from 'react'
+import Home from "./pages/Home/Home.jsx";
 
 const App = () => {
   return (
-    <div className='text-4xl'>Ali Builders Associates</div>
-  )
-}
+    <div>
+      <Home />
+    </div>
+  );
+};
 
-export default App
+export default App;
