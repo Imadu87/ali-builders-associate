@@ -1,33 +1,5 @@
-import {
-    FaFacebookF,
-    FaInstagram,
-    FaLinkedinIn,
-    FaYoutube,
-} from "react-icons/fa";
 import { COMPANY } from "../../../constant/company";
-
-const socialLinks = [
-    {
-        name: "Facebook",
-        icon: <FaFacebookF />,
-        url: COMPANY.social.facebook,
-    },
-    {
-        name: "LinkedIn",
-        icon: <FaLinkedinIn />,
-        url: COMPANY.social.linkedin,
-    },
-    {
-        name: "Instagram",
-        icon: <FaInstagram />,
-        url: COMPANY.social.instagram,
-    },
-    {
-        name: "YouTube",
-        icon: <FaYoutube />,
-        url: COMPANY.social.youtube,
-    },
-];
+import { SOCIAL_LINKS } from "../../../constant/socialLinks.jsx";
 
 const TopBar = () => {
     return (
@@ -36,7 +8,7 @@ const TopBar = () => {
 
                 {/* Social Icons */}
                 <div className="flex items-center gap-4">
-                    {socialLinks.map((social) => (
+                    {SOCIAL_LINKS.map((social) => (
                         <a
                             key={social.name}
                             href={social.url}
