@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import { FOOTER_LINKS } from "../../../constant/footerLinks";
+import { FOOTER_DATA } from "../../../constant/footer/footerData";
 
 const FooterBottom = () => {
     return (
@@ -21,7 +21,7 @@ const FooterBottom = () => {
 
                 <ul className="flex flex-wrap items-center justify-center gap-6">
 
-                    {FOOTER_LINKS.map((item) => (
+                    {FOOTER_DATA.links.map((item) => (
                         <li key={item.path}>
                             <Link
                                 to={item.path}

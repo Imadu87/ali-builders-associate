@@ -3,7 +3,7 @@ import ContactInfoCard from "../../common/ContactInfoCard";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 
-import { COMPANY } from "../../../constant/company";
+import { COMPANY } from "../../../constant/common/company";
 
 const HeaderInfo = () => {
     return (

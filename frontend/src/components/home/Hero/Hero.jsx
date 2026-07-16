@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 
 import HeroSlide from "./HeroSlide";
 import HeroNavigation from "./HeroNavigation";
-import { HERO_SLIDES } from "../../../constant/heroData.js";
+import { HOME_DATA } from "../../../constant/home/homeData";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
         }}
         className="h-full"
       >
-        {HERO_SLIDES.map((slide) => (
+        {HOME_DATA.hero.map((slide) => (
           <SwiperSlide key={slide.id}>
             <HeroSlide slide={slide} />
           </SwiperSlide>

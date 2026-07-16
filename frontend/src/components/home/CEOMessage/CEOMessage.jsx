@@ -1,9 +1,9 @@
-import { COMPANY } from "../../../constant/company";
+import { HOME_DATA } from "../../../constant/home/homeData";
 
 const CEOMessage = () => {
     return (
         <section className="first-section bg-white">
-            <div className="container px-5 py-14 sm:py-16 lg:py-20">
+            <div className="container">
 
                 <div className="section-header">
                     <span className="section-subtitle">
@@ -21,18 +21,18 @@ const CEOMessage = () => {
 
                     <div>
 
-                        <p className="section-description italic">
-                            {COMPANY.ceo.message}
+                        <p className="section-description-left italic">
+                            {HOME_DATA.ceo.message}
                         </p>
 
                         <div className="mt-8">
 
                             <h3 className="text-2xl font-bold text-heading">
-                                {COMPANY.ceo.name}
+                                {HOME_DATA.ceo.name}
                             </h3>
 
                             <p className="mt-2 font-medium text-secondary">
-                                {COMPANY.ceo.designation}
+                                {HOME_DATA.ceo.designation}
                             </p>
 
                         </div>
@@ -45,8 +45,8 @@ const CEOMessage = () => {
                         <div className="absolute h-72 w-72 rounded-full bg-secondary/15 blur-2xl"></div>
 
                         <img
-                            src={COMPANY.ceo.image}
-                            alt={COMPANY.ceo.name}
+                            src={HOME_DATA.ceo.image}
+                            alt={HOME_DATA.ceo.name}
                             className="relative z-10 h-72 w-72 rounded-full border-4 border-secondary object-cover shadow-2xl md:h-80 md:w-80"
                         />
 

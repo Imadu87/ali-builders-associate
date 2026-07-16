@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import { HiOutlineBars3 } from "react-icons/hi2";
 
-import { NAV_LINKS } from "../../../constant/navigation";
+import { NAV_LINKS } from "../../../constant/navbar/navbarData"
 import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {

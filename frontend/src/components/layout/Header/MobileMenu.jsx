@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import { IoClose } from "react-icons/io5";
 
-import { NAV_LINKS } from "../../../constant/navigation";
+import { NAV_LINKS } from "../../../constant/navbar/navbarData";
 
 const MobileMenu = ({ isOpen, setIsOpen }) => {
     return (

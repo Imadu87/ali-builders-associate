@@ -1,5 +1,5 @@
-import { COMPANY } from "../../../constant/company";
-import { SOCIAL_LINKS } from "../../../constant/socialLinks.jsx";
+import { COMPANY } from "../../../constant/common/company.js";
+import { SOCIAL_LINKS } from "../../../constant/common/socialLinks.jsx";
 
 const TopBar = () => {
     return (

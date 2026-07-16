@@ -6,9 +6,9 @@ import { HiChevronRight } from "react-icons/hi2";
 
 import FooterBottom from "./FooterBottom";
 
-import { COMPANY } from "../../../constant/company";
-import { SOCIAL_LINKS } from "../../../constant/socialLinks";
-import { FOOTER_SERVICES } from "../../../constant/footerServices";
+import { COMPANY } from "../../../constant/common/company";
+import { SOCIAL_LINKS } from "../../../constant/common/socialLinks";
+import { FOOTER_DATA } from "../../../constant/footer/footerData";
 
 const Footer = () => {
   return (
@@ -85,7 +85,7 @@ const Footer = () => {
             <h3 className="mb-6 text-2xl font-semibold">Our Services</h3>
 
             <ul className="space-y-3">
-              {FOOTER_SERVICES.map((service) => (
+              {FOOTER_DATA.services.map((service) => (
                 <li
                   key={service}
                   className="flex items-center gap-2 text-white/70 transition-default hover:text-secondary"
