@@ -1,6 +1,6 @@
 import SectionHeader from "../../common/SectionHeader"
 
-import { HOME_DATA } from "../../../constant/home/homeData";
+import { ABOUT_DATA } from "../../../constant/about/aboutData";
 
 const AboutSection = () => {
     return (
@@ -15,9 +15,9 @@ const AboutSection = () => {
 
                         <SectionHeader
                             align="left"
-                            subtitle={HOME_DATA.about.subtitle}
-                            title={HOME_DATA.about.title}
-                            description={HOME_DATA.about.description}
+                            subtitle={ABOUT_DATA.subtitle}
+                            title={ABOUT_DATA.title}
+                            description={ABOUT_DATA.description}
                         />
 
                         {/* Our Goal */}
@@ -25,11 +25,11 @@ const AboutSection = () => {
                         <div className="mt-10">
 
                             <h3 className="mb-3 text-2xl font-semibold text-heading">
-                                {HOME_DATA.about.goalTitle}
+                                {ABOUT_DATA.goalTitle}
                             </h3>
 
                             <p className="leading-8 text-text">
-                                {HOME_DATA.about.goalDescription}
+                                {ABOUT_DATA.goalDescription}
                             </p>
 
                         </div>
@@ -39,11 +39,11 @@ const AboutSection = () => {
                         <div className="mt-8">
 
                             <h3 className="mb-3 text-2xl font-semibold text-heading">
-                                {HOME_DATA.about.visionTitle}
+                                {ABOUT_DATA.visionTitle}
                             </h3>
 
                             <p className="leading-8 text-text">
-                                {HOME_DATA.about.visionDescription}
+                                {ABOUT_DATA.visionDescription}
                             </p>
 
                         </div>
@@ -55,7 +55,7 @@ const AboutSection = () => {
                     <div className="relative">
 
                         <img
-                            src={HOME_DATA.about.image}
+                            src={ABOUT_DATA.image}
                             alt="About Ali Builders"
                             className="h-full w-full rounded-xl object-cover shadow-primary"
                         />

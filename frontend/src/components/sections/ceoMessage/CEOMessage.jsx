@@ -1,4 +1,4 @@
-import { HOME_DATA } from "../../../constant/home/homeData";
+import { CEO_DATA } from "../../../constant/ceoMessage/ceoMessageData";
 
 const CEOMessage = () => {
     return (
@@ -22,17 +22,17 @@ const CEOMessage = () => {
                     <div>
 
                         <p className="section-description-left italic">
-                            {HOME_DATA.ceo.message}
+                            {CEO_DATA.message}
                         </p>
 
                         <div className="mt-8">
 
                             <h3 className="text-2xl font-bold text-heading">
-                                {HOME_DATA.ceo.name}
+                                {CEO_DATA.name}
                             </h3>
 
                             <p className="mt-2 font-medium text-secondary">
-                                {HOME_DATA.ceo.designation}
+                                {CEO_DATA.designation}
                             </p>
 
                         </div>
@@ -45,8 +45,8 @@ const CEOMessage = () => {
                         <div className="absolute h-72 w-72 rounded-full bg-secondary/15 blur-2xl"></div>
 
                         <img
-                            src={HOME_DATA.ceo.image}
-                            alt={HOME_DATA.ceo.name}
+                            src={CEO_DATA.image}
+                            alt={CEO_DATA.name}
                             className="relative z-10 h-72 w-72 rounded-full border-4 border-secondary object-cover shadow-2xl md:h-80 md:w-80"
                         />
 
