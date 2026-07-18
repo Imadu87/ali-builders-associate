@@ -1,8 +1,13 @@
+// heroSection
 import hero1 from "../../assets/images/hero/hero1.avif";
 import hero2 from "../../assets/images/hero/hero2.jpg";
 import hero3 from "../../assets/images/hero/hero3.avif";
 
+// ceoMessageSection
 import ceoImage from "../../assets/images/ceo/ceo.jpeg";
+
+// statsSection
+import { FaAward, FaBuilding, FaUsers, FaHammer } from "react-icons/fa6";
 
 export const HOME_DATA = {
   hero: [
@@ -59,4 +64,35 @@ export const HOME_DATA = {
 
     image: hero1,
   },
+
+  stats: [
+    {
+      id: 1,
+      icon: FaAward,
+      number: "15",
+      suffix: "+",
+      title: "Years of Experience",
+    },
+    {
+      id: 2,
+      icon: FaBuilding,
+      number: "08",
+      suffix: "+",
+      title: "Projects Completed",
+    },
+    {
+      id: 3,
+      icon: FaUsers,
+      number: "1000",
+      suffix: "+",
+      title: "Happy Clients",
+    },
+    {
+      id: 4,
+      icon: FaHammer,
+      number: "04",
+      suffix: "",
+      title: "Ongoing Projects",
+    },
+  ],
 };

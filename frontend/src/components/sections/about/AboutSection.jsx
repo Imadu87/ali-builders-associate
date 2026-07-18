@@ -1,4 +1,4 @@
-import SectionHeader from "../../common/SectionHeader";
+import SectionHeader from "../../common/SectionHeader"
 
 import { HOME_DATA } from "../../../constant/home/homeData";
 

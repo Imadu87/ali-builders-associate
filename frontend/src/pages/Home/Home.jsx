@@ -1,7 +1,8 @@
-import Header from "../../components/layout/Header/Header"
 import Hero from "../../components/home/Hero/Hero"
 import CEOMessage from "../../components/home/CEOMessage/CEOMessage"
-import AboutSection from "../../components/home/About/AboutSection"
+import AboutSection from "../../components/sections/about/AboutSection"
+import StatsSection from "../../components/home/StatsSection/StatsSection"
+import ServicesSection from "../../components/sections/services/ServicesSection"
 
 const Home = () => {
     return (
@@ -9,6 +10,8 @@ const Home = () => {
             <Hero />
             <CEOMessage />
             <AboutSection />
+            <StatsSection />
+            <ServicesSection />
         </div>
     )
 }
