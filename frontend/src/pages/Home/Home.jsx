@@ -5,6 +5,9 @@ import StatsSection from "../../components/home/StatsSection/StatsSection"
 import ServicesSection from "../../components/sections/services/ServicesSection"
 import ProjectsSection from "../../components/sections/projects/ProjectsSection"
 import ClientsSection from "../../components/home/Clients/ClientsSection"
+import TeamSection from "../../components/sections/team/TeamSection"
+import PhotoGallerySection from "../../components/sections/photoGallery/PhotoGallerySection"
+import VideoGallerySection from "../../components/sections/VideoGallery/VideoGallerySection"
 
 const Home = () => {
     return (
@@ -16,6 +19,9 @@ const Home = () => {
             <ServicesSection />
             <ProjectsSection />
             <ClientsSection />
+            <TeamSection />
+            <PhotoGallerySection />
+            <VideoGallerySection />
         </div>
     )
 }
