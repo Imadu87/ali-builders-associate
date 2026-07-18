@@ -8,6 +8,7 @@ import ClientsSection from "../../components/home/Clients/ClientsSection"
 import TeamSection from "../../components/sections/team/TeamSection"
 import PhotoGallerySection from "../../components/sections/photoGallery/PhotoGallerySection"
 import VideoGallerySection from "../../components/sections/VideoGallery/VideoGallerySection"
+import ContactCTA from "../../components/sections/contactCTA/ContactCTA"
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <TeamSection />
             <PhotoGallerySection />
             <VideoGallerySection />
+            <ContactCTA />
         </div>
     )
 }
