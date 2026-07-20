@@ -3,7 +3,7 @@ import PageHero from "../../components/common/PageHero"
 import AboutSection from "../../components/sections/about/AboutSection"
 import StatsSection from "../../components/sections/stats/StatsSection"
 import CEOMessage from "../../components/sections/ceoMessage/CEOMessage"
-import TeamSection from "../../components/sections/Team/TeamSection";
+import TeamSection from "../../components/sections/team/TeamSection";
 import ContactCTA from "../../components/sections/ContactCTA/ContactCTA";
 
 import aboutBanner from "../../assets/images/hero/hero1.avif"
