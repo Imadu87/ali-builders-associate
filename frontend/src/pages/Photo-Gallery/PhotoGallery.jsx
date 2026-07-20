@@ -1,7 +1,22 @@
-const PhotoGallery = () => {
-  return (
-    <div>PhotoGallery Page</div>
-  )
-}
+import PageHero from "../../components/common/PageHero"
 
-export default PhotoGallery
+import ContactCTA from "../../components/sections/contactCTA/ContactCTA";
+
+import photoBanner from "../../assets/images/hero/hero1.avif"
+import PhotoGallerySection from "../../components/sections/photoGallery/PhotoGallerySection";
+
+const PhotoGallery = () => {
+    return (
+        <>
+            <PageHero
+                title="Photo Gallery"
+                breadcrumb="Photo Gallery"
+                background={photoBanner}
+            />
+            <PhotoGallerySection />
+            <ContactCTA />
+        </>
+    );
+};
+
+export default PhotoGallery;

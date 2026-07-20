@@ -6,9 +6,12 @@ import PhotoCard from "./PhotoCard";
 
 import { PHOTO_GALLERY_DATA } from "../../../constant/photoGallery/photoData"
 
-const PhotoGallerySection = () => {
+const PhotoGallerySection = ({ limit, showButton = false }) => {
 
     const [selectedImage, setSelectedImage] = useState(null);
+    const featuredPhoto = limit
+        ? PHOTO_GALLERY_DATA.slice(0, limit)
+        : PHOTO_GALLERY_DATA;
 
     return (
         <section className="section bg-white">
@@ -23,7 +26,7 @@ const PhotoGallerySection = () => {
 
                 <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
-                    {PHOTO_GALLERY_DATA.slice(0, 4).map((photo) => (
+                    {featuredPhoto.map((photo) => (
                         <PhotoCard
                             key={photo.id}
                             {...photo}
@@ -34,10 +37,9 @@ const PhotoGallerySection = () => {
                 </div>
 
                 <div className="mt-14 flex justify-center">
-
-                    <PrimaryButton to="/photo-gallery">
+                    {showButton && <PrimaryButton to="/photo-gallery">
                         View All Photos
-                    </PrimaryButton>
+                    </PrimaryButton>}
 
                 </div>
 

@@ -6,7 +6,7 @@ import VideoCard from "./VideoCard";
 
 import { VIDEO_GALLERY_DATA } from "../../../constant/videoGallery/videoGalleryData";
 
-const VideoGallerySection = () => {
+const VideoGallerySection = ({ showButton = false }) => {
 
     const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -34,9 +34,9 @@ const VideoGallerySection = () => {
                 </div>
 
                 <div className="mt-14 flex justify-center">
-                    <PrimaryButton to="/video-gallery">
+                    {showButton && <PrimaryButton to="/video-gallery">
                         View All Videos
-                    </PrimaryButton>
+                    </PrimaryButton>}
                 </div>
 
             </div>

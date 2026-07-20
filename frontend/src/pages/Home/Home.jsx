@@ -21,8 +21,8 @@ const Home = () => {
             <ProjectsSection limit={4} showButton={true} />
             <ClientsSection />
             <TeamSection limit={4} showButton={true} />
-            <PhotoGallerySection />
-            <VideoGallerySection />
+            <PhotoGallerySection limit={4} showButton={true} />
+            <VideoGallerySection showButton={true} />
             <ContactCTA />
         </div>
     )
