@@ -20,7 +20,7 @@ const Home = () => {
             <ServicesSection limit={4} showButton={true} />
             <ProjectsSection limit={4} showButton={true} />
             <ClientsSection />
-            <TeamSection />
+            <TeamSection limit={4} showButton={true} />
             <PhotoGallerySection />
             <VideoGallerySection />
             <ContactCTA />

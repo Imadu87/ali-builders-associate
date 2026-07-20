@@ -4,11 +4,11 @@ import TeamCard from "./TeamCard";
 
 import { TEAM_DATA } from "../../../constant/team/teamData";
 
-const TeamSection = () => {
+const TeamSection = ({ limit, showButton = false }) => {
 
-    const featuredMembers = TEAM_DATA.filter(
-        (member) => member.featured
-    );
+    const featuredMembers = limit
+        ? TEAM_DATA.slice(0, limit)
+        : TEAM_DATA;
 
     return (
         <section className="section bg-light">
@@ -34,9 +34,9 @@ const TeamSection = () => {
 
                 <div className="mt-14 flex justify-center">
 
-                    <PrimaryButton to="/team">
+                    {showButton && <PrimaryButton to="/team">
                         View All Team
-                    </PrimaryButton>
+                    </PrimaryButton>}
 
                 </div>
 
