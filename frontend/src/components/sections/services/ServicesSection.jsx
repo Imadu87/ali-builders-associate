@@ -4,7 +4,10 @@ import PrimaryButton from "../../common/PrimaryButton";
 
 import { SERVICES_DATA } from "../../../constant/services/servicesData";
 
-const ServicesSection = () => {
+const ServicesSection = ({ limit, showButton = false, }) => {
+  const services = limit
+    ? SERVICES_DATA.slice(0, limit)
+    : SERVICES_DATA;
   return (
     <section className="section bg-light">
       <div className="container">
@@ -15,14 +18,14 @@ const ServicesSection = () => {
         />
 
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {SERVICES_DATA.slice(0, 4).map((service) => (
+          {services.map((service) => (
             <ServiceCard key={service.id} {...service} />
           ))}
         </div>
 
-        <div className="mt-14 flex justify-center">
-          <PrimaryButton>View All Services</PrimaryButton>
-        </div>
+        {showButton && <div className="mt-14 flex justify-center">
+          <PrimaryButton to="/services">View All Services</PrimaryButton>
+        </div>}
       </div>
     </section>
   );

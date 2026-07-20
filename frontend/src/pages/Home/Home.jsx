@@ -17,7 +17,7 @@ const Home = () => {
             <CEOMessage />
             <AboutSection />
             <StatsSection />
-            <ServicesSection />
+            <ServicesSection limit={4} showButton={true} />
             <ProjectsSection limit={4} showButton={true} />
             <ClientsSection />
             <TeamSection />
