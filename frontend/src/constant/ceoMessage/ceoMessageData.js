@@ -1,7 +1,7 @@
 import ceoImage from "../../assets/images/ceo/ceo.jpeg"
 
 export const CEO_DATA = {
-  name: "Imad Uddin",
+  name: "Haider Ali",
   designation: "CEO, Ali Builders Associate",
   image: ceoImage,
   message:
