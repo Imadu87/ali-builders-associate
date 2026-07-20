@@ -11,10 +11,12 @@ import PhotoGallery from "../pages/Photo-Gallery/PhotoGallery";
 import VideoGallery from "../pages/Vdeo-Gallery/VideoGallery";
 import FileVerification from "../pages/File-Verification/FileVerification";
 import Contact from "../pages/Contact/Contact";
+import ScrollToTop from "../components/common/ScrollToTop";
 
 const AppRoutes = () => {
     return (
         <BrowserRouter>
+        <ScrollToTop />
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route index element={<Home />} />
