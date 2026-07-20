@@ -1,5 +1,3 @@
-import { Link } from "react-router";
-
 import { CONTACT_DATA } from "../../../constant/contact/contactData"
 
 import PrimaryButton from "../../common/PrimaryButton";

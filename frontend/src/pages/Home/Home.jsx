@@ -18,7 +18,7 @@ const Home = () => {
             <AboutSection />
             <StatsSection />
             <ServicesSection />
-            <ProjectsSection />
+            <ProjectsSection limit={4} showButton={true} />
             <ClientsSection />
             <TeamSection />
             <PhotoGallerySection />
