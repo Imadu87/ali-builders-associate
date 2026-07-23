@@ -8,6 +8,7 @@ import Project from "../pages/Projects/Project";
 import ProjectDetails from "../pages/Projects/ProjectDetails";
 import Services from "../pages/Services/Services";
 import Team from "../pages/Team/Team";
+import TeamDetails from "../pages/Team/TeamDetails";
 import PhotoGallery from "../pages/Photo-Gallery/PhotoGallery";
 import VideoGallery from "../pages/Vdeo-Gallery/VideoGallery";
 import FileVerification from "../pages/File-Verification/FileVerification";
@@ -17,19 +18,20 @@ import ScrollToTop from "../components/common/ScrollToTop";
 const AppRoutes = () => {
     return (
         <BrowserRouter>
-        <ScrollToTop />
+            <ScrollToTop />
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route index element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/projects" element={<Project />} /> 
+                    <Route path="/projects" element={<Project />} />
                     <Route path="/projects/:slug" element={<ProjectDetails />} />
-                    <Route path="/services" element={<Services />} /> 
-                    <Route path="/team" element={<Team />} /> 
-                    <Route path="/photo-gallery" element={<PhotoGallery />} /> 
-                    <Route path="/video-gallery" element={<VideoGallery />} /> 
-                    <Route path="/file-verification" element={<FileVerification />} /> 
-                    <Route path="/contact" element={<Contact />} /> 
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/team" element={<Team />} />
+                    <Route path="/team/:slug" element={<TeamDetails />} />
+                    <Route path="/photo-gallery" element={<PhotoGallery />} />
+                    <Route path="/video-gallery" element={<VideoGallery />} />
+                    <Route path="/file-verification" element={<FileVerification />} />
+                    <Route path="/contact" element={<Contact />} />
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -1,30 +1,32 @@
-import member1 from "../../assets/images/members/member1.jfif"
-import member2 from "../../assets/images/members/member2.jfif"
-import member3 from "../../assets/images/members/member3.webp"
-import member4 from "../../assets/images/members/member4.jfif"
-import member5 from "../../assets/images/members/member5.avif"
-import member6 from "../../assets/images/members/member6.jfif"
+import member1 from "../../assets/images/members/member1.jfif";
+import member2 from "../../assets/images/members/member2.jfif";
+import member3 from "../../assets/images/members/member3.webp";
+import member4 from "../../assets/images/members/member4.jfif";
+import member5 from "../../assets/images/members/member5.avif";
+import member6 from "../../assets/images/members/member6.jfif";
 
 export const TEAM_DATA = [
   {
     id: 1,
-    slug: "imad-uddin",
+    slug: "haider-ali",
     featured: true,
 
-    name: "Imad Uddin",
+    name: "Haider-Ali",
     designation: "Chief Executive Officer",
 
     image: member1,
+    experience: "4+ Years of Experience",
 
     phone: "+92 300 1234567",
-    email: "imad@alibuildersassociate.com",
+    email: "ali@alibuildersassociate.com",
 
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "www.facebook.com",
+    linkedin: "www.linkedin.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
 
     description:
-      "Imad Uddin leads Ali Builders Associate with a vision of delivering quality construction, trusted real estate solutions, and long-term client satisfaction.",
+      "Haider Ali leads Ali Builders Associate with a vision of delivering quality construction, trusted real estate solutions, and long-term client satisfaction.",
   },
 
   {
@@ -36,13 +38,15 @@ export const TEAM_DATA = [
     designation: "Managing Director",
 
     image: member2,
+    experience: "4+ Years of Experience",
 
     phone: "+92 301 1234567",
     email: "ali@alibuildersassociate.com",
 
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "www.facebook.com",
+    linkedin: "www.linkedin.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
 
     description:
       "Ali Khan oversees business operations and strategic planning, ensuring every project meets the highest quality standards.",
@@ -57,13 +61,15 @@ export const TEAM_DATA = [
     designation: "Project Manager",
 
     image: member3,
+    experience: "4+ Years of Experience",
 
     phone: "+92 302 1234567",
     email: "ahmed@alibuildersassociate.com",
 
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "www.facebook.com",
+    linkedin: "www.linkedin.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
 
     description:
       "Ahmed Raza manages project execution, timelines, and quality control to ensure successful project delivery.",
@@ -78,13 +84,15 @@ export const TEAM_DATA = [
     designation: "Marketing Manager",
 
     image: member4,
+    experience: "4+ Years of Experience",
 
     phone: "+92 303 1234567",
     email: "usman@alibuildersassociate.com",
 
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "www.facebook.com",
+    linkedin: "www.linkedin.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
 
     description:
       "Usman Tariq specializes in real estate marketing, helping clients find the best investment opportunities.",
@@ -98,14 +106,17 @@ export const TEAM_DATA = [
     name: "Hamza Malik",
     designation: "Sales Executive",
 
+    experience: "4+ Years of Experience",
+
     image: member5,
 
     phone: "+92 304 1234567",
     email: "hamza@alibuildersassociate.com",
 
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "www.facebook.com",
+    linkedin: "www.linkedin.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
 
     description:
       "Hamza Malik assists clients throughout the buying process by providing professional guidance and support.",
@@ -120,13 +131,15 @@ export const TEAM_DATA = [
     designation: "Site Engineer",
 
     image: member6,
+    experience: "4+ Years of Experience",
 
     phone: "+92 305 1234567",
     email: "saad@alibuildersassociate.com",
 
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "www.facebook.com",
+    linkedin: "www.linkedin.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
 
     description:
       "Saad Hassan supervises construction sites and ensures compliance with engineering standards and project specifications.",
