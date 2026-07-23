@@ -5,9 +5,12 @@ const ProjectCard = ({
     slug,
     image,
     status,
+    animationDelay
 }) => {
     return (
         <Link
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
             to={`/projects/${slug}`}
             className="group block overflow-hidden rounded-xl shadow-primary"
         >

@@ -15,17 +15,32 @@ const PrimaryButton = ({
         px-6 py-3
         text-sm font-semibold
         text-white
-        transition-default
+
+        shadow-lg shadow-secondary/20
+
+        transition-all duration-300 ease-out
+
         hover:-translate-y-1
+        hover:scale-105
         hover:bg-primary
+        hover:shadow-xl hover:shadow-primary/30
+
+        active:translate-y-0
+        active:scale-95
+
+        disabled:pointer-events-none
         disabled:cursor-not-allowed
         disabled:opacity-60
+
         ${className}
     `;
 
   if (to) {
     return (
-      <Link to={to} className={classes}>
+      <Link
+        to={to}
+        className={classes}
+      >
         {children}
       </Link>
     );

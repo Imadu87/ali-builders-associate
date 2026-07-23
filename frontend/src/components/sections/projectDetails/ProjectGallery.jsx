@@ -12,7 +12,7 @@ const ProjectGallery = ({ gallery }) => {
           description="Browse the latest images showcasing the development progress and highlights of this project."
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-aos="fade-up" className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
           {gallery.map((item) => (
 

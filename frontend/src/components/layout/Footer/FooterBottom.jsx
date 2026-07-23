@@ -4,7 +4,7 @@ import { FOOTER_DATA } from "../../../constant/footer/footerData";
 
 const FooterBottom = () => {
     return (
-        <div className="border-t border-white/10">
+        <div data-aos="fade-up" className="border-t border-white/10">
 
             <div className="container flex flex-col items-center justify-between gap-5 py-6 text-sm text-white/70 lg:flex-row">
 

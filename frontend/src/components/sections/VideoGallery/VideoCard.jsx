@@ -3,12 +3,15 @@ const VideoCard = ({
     description,
     videoId,
     onClick,
+    animationDelay
 }) => {
 
     const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
     return (
         <div
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
             onClick={onClick}
             className="group cursor-pointer overflow-hidden rounded-xl bg-white shadow-primary"
         >

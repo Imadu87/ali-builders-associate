@@ -1,6 +1,13 @@
-const ServiceCard = ({ icon: Icon, title, description }) => {
+const ServiceCard = ({
+    icon: Icon,
+    title,
+    description,
+    animationDelay,
+}) => {
     return (
         <div
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
             className="
                 group rounded-xl border border-border
                 bg-white p-8 text-center
@@ -13,10 +20,12 @@ const ServiceCard = ({ icon: Icon, title, description }) => {
             <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-secondary/10 transition-default group-hover:bg-secondary">
                 <Icon className="text-4xl text-secondary transition-default group-hover:text-white" />
             </div>
+
             {/* Title */}
             <h3 className="mb-4 text-2xl font-semibold text-heading">
                 {title}
             </h3>
+
             {/* Description */}
             <p className="leading-7 text-text">
                 {description}

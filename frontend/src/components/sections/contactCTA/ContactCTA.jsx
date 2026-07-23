@@ -18,7 +18,7 @@ const ContactCTA = () => {
 
             {/* Content */}
 
-            <div className="container relative z-10">
+            <div data-aos="fade-up" className="container relative z-10">
 
                 <div className="mx-auto max-w-4xl text-center text-white">
 

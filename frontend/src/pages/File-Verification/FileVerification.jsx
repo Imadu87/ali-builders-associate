@@ -1,7 +1,7 @@
-import PageHero from "../../components/common/PageHero"
+import PageHero from "../../components/common/PageHero";
 import PrimaryButton from "../../components/common/PrimaryButton";
 
-import heroImage from "../../assets/images/hero/hero1.avif"
+import heroImage from "../../assets/images/hero/hero1.avif";
 
 const FileVerification = () => {
   return (
@@ -16,9 +16,16 @@ const FileVerification = () => {
 
         <div className="container">
 
-          <div className="mx-auto max-w-xl rounded-xl bg-white p-8 shadow-primary lg:p-10">
+          <div
+            data-aos="zoom-in-up"
+            className="mx-auto max-w-xl rounded-xl bg-white p-8 shadow-primary lg:p-10"
+          >
 
-            <div className="mb-8 text-center">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="mb-8 text-center"
+            >
 
               <h2 className="text-3xl font-bold text-heading">
                 File Verification
@@ -34,29 +41,40 @@ const FileVerification = () => {
             <form className="space-y-5">
 
               <input
+                data-aos="fade-up"
+                data-aos-delay="200"
                 type="text"
                 placeholder="Registration Number"
                 className="form-input"
               />
 
               <input
+                data-aos="fade-up"
+                data-aos-delay="300"
                 type="text"
                 placeholder="CNIC (XXXXX-XXXXXXX-X)"
                 className="form-input"
               />
 
               <input
+                data-aos="fade-up"
+                data-aos-delay="400"
                 type="password"
                 placeholder="Password"
                 className="form-input"
               />
 
-              <PrimaryButton
-                type="submit"
-                className="w-full justify-center"
+              <div
+                data-aos="fade-up"
+                data-aos-delay="500"
               >
-                Verify File
-              </PrimaryButton>
+                <PrimaryButton
+                  type="submit"
+                  className="w-full justify-center"
+                >
+                  Verify File
+                </PrimaryButton>
+              </div>
 
             </form>
 

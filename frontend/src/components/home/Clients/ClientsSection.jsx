@@ -17,9 +17,10 @@ const ClientsSection = () => {
 
                 <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
-                    {HOME_DATA.clients.map((client) => (
+                    {HOME_DATA.clients.map((client, index) => (
                         <ClientCard
                             key={client.id}
+                            animationDelay={index * 100} 
                             {...client}
                         />
                     ))}

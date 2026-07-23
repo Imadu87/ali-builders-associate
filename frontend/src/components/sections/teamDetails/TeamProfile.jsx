@@ -19,7 +19,7 @@ const TeamProfile = ({ member }) => {
 
                     {/* Image */}
 
-                    <div>
+                    <div data-aos="fade-right">
                         <img
                             src={member.image}
                             alt={member.name}
@@ -29,7 +29,7 @@ const TeamProfile = ({ member }) => {
 
                     {/* Content */}
 
-                    <div>
+                    <div data-aos="fade-left">
 
                         <SectionHeader
                             align="left"

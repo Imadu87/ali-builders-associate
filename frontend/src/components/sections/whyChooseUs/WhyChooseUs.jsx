@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
             <div className="container">
                 <div className="grid items-center gap-16 lg:grid-cols-2">
                     {/* Left */}
-                    <div>
+                    <div data-aos="fade-right">
                         <SectionHeader
                             align="left"
                             subtitle={WHY_CHOOSE_US.subtitle}
@@ -16,9 +16,11 @@ const WhyChooseUs = () => {
                             description={WHY_CHOOSE_US.description}
                         />
                         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-                            {WHY_CHOOSE_US.features.map((item) => (
+                            {WHY_CHOOSE_US.features.map((item, index) => (
                                 <div
                                     key={item.id}
+                                    data-aos="zoom-in"
+                                    data-aos-delay={index * 100}
                                     className="rounded-lg border border-border bg-white p-6 shadow-primary transition-default hover:-translate-y-1"
                                 >
                                     <div className="mb-4 text-4xl text-secondary">
@@ -35,7 +37,7 @@ const WhyChooseUs = () => {
                         </div>
                     </div>
                     {/* Right */}
-                    <div>
+                    <div data-aos="fade-left">
                         <img
                             src={WHY_CHOOSE_US.image}
                             alt={WHY_CHOOSE_US.title}

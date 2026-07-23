@@ -41,7 +41,7 @@ const Hero = () => {
 
                             {/* Content */}
 
-                            <div className="container relative z-20 flex h-full items-center justify-center px-4">
+                            <div data-aos="fade-up"  className="container relative z-20 flex h-full items-center justify-center px-4">
                                 <div className="max-w-5xl text-center text-white">
 
                                     {/* Subtitle */}

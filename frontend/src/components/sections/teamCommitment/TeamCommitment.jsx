@@ -10,7 +10,7 @@ const TeamCommitment = () => {
             <div className="container">
                 <div className="grid items-center gap-16 lg:grid-cols-2">
                     {/* Image */}
-                    <div>
+                    <div  data-aos="fade-right">
                         <img
                             src={TEAM_COMMITMENT.image}
                             alt={TEAM_COMMITMENT.title}
@@ -18,7 +18,7 @@ const TeamCommitment = () => {
                         />
                     </div>
                     {/* Content */}
-                    <div>
+                    <div  data-aos="fade-left">
                         <SectionHeader
                             align="left"
                             subtitle={TEAM_COMMITMENT.subtitle}

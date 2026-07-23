@@ -6,6 +6,7 @@ const SectionHeader = ({
 }) => {
     return (
         <div
+            data-aos="fade-up"
             className={`section-header ${align === "left" ? "text-left" : "text-center"
                 }`}
         >

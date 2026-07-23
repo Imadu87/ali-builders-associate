@@ -26,9 +26,10 @@ const PhotoGallerySection = ({ limit, showButton = false }) => {
 
                 <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
-                    {featuredPhoto.map((photo) => (
+                    {featuredPhoto.map((photo, index) => (
                         <PhotoCard
                             key={photo.id}
+                            animationDelay={index * 100}
                             {...photo}
                             onClick={() => setSelectedImage(photo.image)}
                         />

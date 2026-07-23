@@ -26,9 +26,10 @@ const ProjectsSection = ({
 
                 <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-                    {projects.map((project) => (
+                    {projects.map((project, index) => (
                         <ProjectCard
                             key={project.id}
+                            animationDelay={index * 100}
                             {...project}
                         />
                     ))}

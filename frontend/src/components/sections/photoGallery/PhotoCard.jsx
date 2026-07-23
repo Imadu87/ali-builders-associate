@@ -1,6 +1,8 @@
-const PhotoCard = ({ image, onClick }) => {
+const PhotoCard = ({ image, onClick, animationDelay }) => {
     return (
         <div
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
             onClick={onClick}
             className="
                 group

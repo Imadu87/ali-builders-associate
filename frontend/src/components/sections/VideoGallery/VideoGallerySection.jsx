@@ -23,9 +23,10 @@ const VideoGallerySection = ({ showButton = false }) => {
 
                 <div className="mt-14 grid gap-8 md:grid-cols-2">
 
-                    {VIDEO_GALLERY_DATA.slice(0, 2).map((video) => (
+                    {VIDEO_GALLERY_DATA.slice(0, 2).map((video, index) => (
                         <VideoCard
                             key={video.id}
+                            animationDelay={index * 100} 
                             {...video}
                             onClick={() => setSelectedVideo(video)}
                         />

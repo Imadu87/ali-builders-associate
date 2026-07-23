@@ -3,9 +3,12 @@ const ClientCard = ({
     name,
     designation,
     company,
+    animationDelay
 }) => {
     return (
         <div
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
             className="
                 rounded-xl
                 border

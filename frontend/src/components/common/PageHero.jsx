@@ -17,7 +17,7 @@ const PageHero = ({
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60" />
             {/* Content */}
-            <div className="container relative z-10 text-center text-white">
+            <div data-aos="fade-up" className="container relative z-10 text-center text-white">
                 <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
                     {title}
                 </h1>

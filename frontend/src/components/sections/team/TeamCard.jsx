@@ -5,9 +5,12 @@ const TeamCard = ({
     image,
     name,
     designation,
+    animationDelay
 }) => {
     return (
         <Link
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
             to={`/team/${slug}`}
             className="group block overflow-hidden rounded-xl shadow-primary"
         >

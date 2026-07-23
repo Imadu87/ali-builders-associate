@@ -11,6 +11,7 @@ const ProjectInfo = ({ project }) => {
       <div className="container">
 
         <SectionHeader
+          data-aos="fade-up"
           align="left"
           subtitle="Project Details"
           title={project.title}
@@ -21,7 +22,7 @@ const ProjectInfo = ({ project }) => {
 
           {/* Image */}
 
-          <div>
+          <div data-aos="fade-right">
             <img
               src={project.image}
               alt={project.title}
@@ -31,7 +32,7 @@ const ProjectInfo = ({ project }) => {
 
           {/* Details */}
 
-          <div className="flex flex-col justify-center">
+          <div data-aos="fade-left" className="flex flex-col justify-center">
 
             <div className="space-y-6">
 
@@ -46,11 +47,10 @@ const ProjectInfo = ({ project }) => {
                   </h3>
 
                   <span
-                    className={`mt-2 inline-block rounded-full px-4 py-2 text-sm font-semibold text-white ${
-                      project.status === "ongoing"
-                        ? "bg-green-600"
-                        : "bg-blue-600"
-                    }`}
+                    className={`mt-2 inline-block rounded-full px-4 py-2 text-sm font-semibold text-white ${project.status === "ongoing"
+                      ? "bg-green-600"
+                      : "bg-blue-600"
+                      }`}
                   >
                     {project.status === "ongoing"
                       ? "Ongoing"

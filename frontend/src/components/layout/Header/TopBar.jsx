@@ -7,7 +7,7 @@ const TopBar = () => {
             <div className="container flex h-10 items-center justify-between">
 
                 {/* Social Icons */}
-                <div className="flex items-center gap-4">
+                <div data-aos="fade-right" className="flex items-center gap-4">
                     {SOCIAL_LINKS.map((social) => (
                         <a
                             key={social.name}
@@ -23,7 +23,7 @@ const TopBar = () => {
                 </div>
 
                 {/* Welcome Text */}
-                <p className="text-sm font-medium tracking-wide">
+                <p data-aos="fade-left" className="text-sm font-medium tracking-wide">
                     Welcome to {COMPANY.name}
                 </p>
 

@@ -23,9 +23,10 @@ const TeamSection = ({ limit, showButton = false }) => {
 
                 <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
-                    {featuredMembers.map((member) => (
+                    {featuredMembers.map((member, index) => (
                         <TeamCard
                             key={member.id}
+                            animationDelay={index * 100} 
                             {...member}
                         />
                     ))}

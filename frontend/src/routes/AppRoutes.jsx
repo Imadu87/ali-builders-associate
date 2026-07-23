@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import MainLayout from "../layout/MainLayout"
@@ -14,8 +16,18 @@ import VideoGallery from "../pages/Vdeo-Gallery/VideoGallery";
 import FileVerification from "../pages/File-Verification/FileVerification";
 import Contact from "../pages/Contact/Contact";
 import ScrollToTop from "../components/common/ScrollToTop";
+import { useEffect } from "react";
 
 const AppRoutes = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 80,
+            mirror: false,
+        });
+    }, []);
     return (
         <BrowserRouter>
             <ScrollToTop />

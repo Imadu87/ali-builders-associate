@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { CEO_DATA } from "../../../constant/ceoMessage/ceoMessageData";
 
 const CEOMessage = () => {
@@ -5,7 +6,7 @@ const CEOMessage = () => {
         <section className="first-section bg-white">
             <div className="container">
 
-                <div className="section-header">
+                <div data-aos="fade-up" className="section-header">
                     <span className="section-subtitle">
                         Leadership
                     </span>
@@ -19,7 +20,7 @@ const CEOMessage = () => {
 
                     {/* Message */}
 
-                    <div>
+                    <div data-aos="fade-right">
 
                         <p className="section-description-left italic">
                             {CEO_DATA.message}
@@ -40,14 +41,31 @@ const CEOMessage = () => {
                     </div>
 
                     {/* CEO Image */}
-                    <div className="relative flex justify-center">
 
+                    <div
+                        data-aos="fade-left"
+                        className="relative flex justify-center"
+                        style={{ perspective: "1200px" }}
+                    >
                         <div className="absolute h-72 w-72 rounded-full bg-secondary/15 blur-2xl"></div>
 
-                        <img
+                        <motion.img
                             src={CEO_DATA.image}
                             alt={CEO_DATA.name}
                             className="relative z-10 h-72 w-72 rounded-full border-4 border-secondary object-cover shadow-2xl md:h-80 md:w-80"
+                            whileHover={{
+                                rotateX: 12,
+                                rotateY: -12,
+                                scale: 1.06,
+                            }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 250,
+                                damping: 18,
+                            }}
+                            style={{
+                                transformStyle: "preserve-3d",
+                            }}
                         />
 
                     </div>
