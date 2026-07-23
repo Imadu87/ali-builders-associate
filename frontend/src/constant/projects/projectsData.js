@@ -37,7 +37,8 @@ export const PROJECTS_DATA = [
     location: "Abbottabad, Pakistan",
     description:
       "A premium residential community offering modern infrastructure, secure surroundings, and excellent investment opportunities.",
-    googleMap: "https://maps.google.com/.....",
+    googleMap:
+      "https://www.google.com/maps?q=Office+No.+3,+Block+C,+5th+Floor,+New+Dil+Jan+Arcade,+Achini+Ring+Road,+Peshawar,+Pakistan&output=embed",
   },
   {
     id: 2,
@@ -67,7 +68,8 @@ export const PROJECTS_DATA = [
     location: "Abbottabad, Pakistan",
     description:
       "A premium residential community offering modern infrastructure, secure surroundings, and excellent investment opportunities.",
-    googleMap: "https://maps.google.com/.....",
+    googleMap:
+      "https://www.google.com/maps?q=Office+No.+3,+Block+C,+5th+Floor,+New+Dil+Jan+Arcade,+Achini+Ring+Road,+Peshawar,+Pakistan&output=embed",
   },
   {
     id: 3,
@@ -97,7 +99,8 @@ export const PROJECTS_DATA = [
     location: "Abbottabad, Pakistan",
     description:
       "A premium residential community offering modern infrastructure, secure surroundings, and excellent investment opportunities.",
-    googleMap: "https://maps.google.com/.....",
+    googleMap:
+      "https://www.google.com/maps?q=Office+No.+3,+Block+C,+5th+Floor,+New+Dil+Jan+Arcade,+Achini+Ring+Road,+Peshawar,+Pakistan&output=embed",
   },
   {
     id: 4,
@@ -127,6 +130,7 @@ export const PROJECTS_DATA = [
     location: "Abbottabad, Pakistan",
     description:
       "A premium residential community offering modern infrastructure, secure surroundings, and excellent investment opportunities.",
-    googleMap: "https://maps.google.com/.....",
+    googleMap:
+      "https://www.google.com/maps?q=Office+No.+3,+Block+C,+5th+Floor,+New+Dil+Jan+Arcade,+Achini+Ring+Road,+Peshawar,+Pakistan&output=embed",
   },
 ];

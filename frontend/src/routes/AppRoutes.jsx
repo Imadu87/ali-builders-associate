@@ -5,6 +5,7 @@ import MainLayout from "../layout/MainLayout"
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Project from "../pages/Projects/Project";
+import ProjectDetails from "../pages/Projects/ProjectDetails";
 import Services from "../pages/Services/Services";
 import Team from "../pages/Team/Team";
 import PhotoGallery from "../pages/Photo-Gallery/PhotoGallery";
@@ -22,6 +23,7 @@ const AppRoutes = () => {
                     <Route index element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Project />} /> 
+                    <Route path="/projects/:slug" element={<ProjectDetails />} />
                     <Route path="/services" element={<Services />} /> 
                     <Route path="/team" element={<Team />} /> 
                     <Route path="/photo-gallery" element={<PhotoGallery />} /> 

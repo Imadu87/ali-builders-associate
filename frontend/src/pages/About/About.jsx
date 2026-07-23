@@ -19,7 +19,7 @@ const About = () => {
             <AboutSection />
             <StatsSection />
             <CEOMessage />
-            <TeamSection />
+            <TeamSection limit={4} showButton={true} />
             <ContactCTA />
         </>
     );
