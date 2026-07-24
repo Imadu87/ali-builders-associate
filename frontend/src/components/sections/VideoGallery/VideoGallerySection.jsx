@@ -3,68 +3,60 @@ import { useState } from "react";
 import SectionHeader from "../../common/SectionHeader";
 import PrimaryButton from "../../common/PrimaryButton";
 import VideoCard from "./VideoCard";
+import VideoModal from "../../common/VideoModal";
 
 import { VIDEO_GALLERY_DATA } from "../../../constant/videoGallery/videoGalleryData";
 
-const VideoGallerySection = ({ showButton = false }) => {
+const VideoGallerySection = ({ showButton = false, limit }) => {
+    const videos = limit
+        ? VIDEO_GALLERY_DATA.slice(0, limit)
+        : VIDEO_GALLERY_DATA;
 
+    const [isOpen, setIsOpen] = useState(false);
     const [selectedVideo, setSelectedVideo] = useState(null);
 
+    const openVideo = (videoId) => {
+        setSelectedVideo(videoId);
+        setIsOpen(true);
+    };
+
     return (
-        <section className="section bg-light">
+        <>
+            <section className="section bg-light">
+                <div className="container">
+                    <SectionHeader
+                        subtitle="Video Gallery"
+                        title="Watch Our Latest Projects"
+                        description="Explore our latest construction updates, project highlights, and company activities through our video gallery."
+                    />
 
-            <div className="container">
-
-                <SectionHeader
-                    subtitle="Video Gallery"
-                    title="Watch Our Latest Projects"
-                    description="Explore our latest construction updates, project highlights, and company activities through our video gallery."
-                />
-
-                <div className="mt-14 grid gap-8 md:grid-cols-2">
-
-                    {VIDEO_GALLERY_DATA.slice(0, 2).map((video, index) => (
-                        <VideoCard
-                            key={video.id}
-                            animationDelay={index * 100} 
-                            {...video}
-                            onClick={() => setSelectedVideo(video)}
-                        />
-                    ))}
-
-                </div>
-
-                <div className="mt-14 flex justify-center">
-                    {showButton && <PrimaryButton to="/video-gallery">
-                        View All Videos
-                    </PrimaryButton>}
-                </div>
-
-            </div>
-
-            {/* Video Modal */}
-
-            {selectedVideo && (
-                <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-5"
-                    onClick={() => setSelectedVideo(null)}
-                >
-                    <div
-                        className="aspect-video w-full max-w-5xl"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <iframe
-                            className="h-full w-full rounded-lg"
-                            src={`https://www.youtube.com/embed/${selectedVideo.videoId}?rel=0&modestbranding=1`}
-                            title={selectedVideo.title}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                        />
+                    <div className="mt-14 grid gap-8 md:grid-cols-2">
+                        {videos.map((video, index) => (
+                            <VideoCard
+                                key={video.id}
+                                {...video}
+                                animationDelay={index * 100}
+                                onClick={() => openVideo(video.videoId)}
+                            />
+                        ))}
                     </div>
-                </div>
-            )}
 
-        </section>
+                    {showButton && (
+                        <div className="mt-14 flex justify-center">
+                            <PrimaryButton to="/video-gallery">
+                                View All Videos
+                            </PrimaryButton>
+                        </div>
+                    )}
+                </div>
+            </section>
+
+            <VideoModal
+                isOpen={isOpen}
+                videoId={selectedVideo}
+                onClose={() => setIsOpen(false)}
+            />
+        </>
     );
 };
 

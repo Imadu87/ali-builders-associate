@@ -1,54 +1,35 @@
+import { FaPlay } from "react-icons/fa6";
+
 const VideoCard = ({
+    thumbnail,
     title,
-    description,
-    videoId,
     onClick,
-    animationDelay
+    animationDelay,
 }) => {
-
-    const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-
     return (
         <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
             data-aos-delay={animationDelay}
             onClick={onClick}
-            className="group cursor-pointer overflow-hidden rounded-xl bg-white shadow-primary"
+            className="group relative cursor-pointer overflow-hidden rounded-xl shadow-primary"
         >
-            {/* Thumbnail */}
+            <img
+                src={thumbnail}
+                alt={title}
+                className="h-72 w-full object-cover transition duration-500 group-hover:scale-110"
+            />
 
-            <div className="relative overflow-hidden">
-
-                <img
-                    src={thumbnail}
-                    alt={title}
-                    className="h-64 w-full object-cover transition duration-700 group-hover:scale-110"
-                />
-
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-2xl text-secondary transition-default group-hover:scale-110">
-                        ▶
-                    </div>
-
+            <div className="absolute inset-0 flex items-center justify-center bg-black/35 transition duration-300 group-hover:bg-black/45">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary text-2xl text-white transition duration-300 group-hover:scale-110">
+                    <FaPlay className="ml-1" />
                 </div>
-
             </div>
 
-            {/* Content */}
-
-            <div className="p-6">
-
-                <h3 className="text-xl font-semibold text-heading">
+            <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-5">
+                <h3 className="text-lg font-semibold text-white">
                     {title}
                 </h3>
-
-                <p className="mt-3 line-clamp-2 text-text">
-                    {description}
-                </p>
-
             </div>
-
         </div>
     );
 };
