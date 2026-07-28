@@ -10,6 +10,9 @@ const HeroSlide = ({ slide }) => {
             <motion.img
                 src={slide.image}
                 alt={slide.title}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
                 className="absolute inset-0 h-full w-full object-cover"
                 initial={{
                     scale: 1.15,

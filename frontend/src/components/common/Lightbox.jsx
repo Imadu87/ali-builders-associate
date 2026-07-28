@@ -60,6 +60,8 @@ const Lightbox = ({
                 <motion.img
                     key={currentIndex}
                     src={images[currentIndex].image}
+                    loading="lazy"
+                    decoding="async"
                     alt=""
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}

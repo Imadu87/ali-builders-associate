@@ -20,7 +20,7 @@ const CEOMessage = () => {
 
                     {/* Message */}
 
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-zoom-in">
 
                         <p className="section-description-left italic">
                             {CEO_DATA.message}
@@ -43,7 +43,7 @@ const CEOMessage = () => {
                     {/* CEO Image */}
 
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-zoom-in"
                         className="relative flex justify-center"
                         style={{ perspective: "1200px" }}
                     >
@@ -52,6 +52,8 @@ const CEOMessage = () => {
                         <motion.img
                             src={CEO_DATA.image}
                             alt={CEO_DATA.name}
+                            loading="lazy"
+                            decoding="async"
                             className="relative z-10 h-72 w-72 rounded-full border-4 border-secondary object-cover shadow-2xl md:h-80 md:w-80"
                             whileHover={{
                                 rotateX: 12,

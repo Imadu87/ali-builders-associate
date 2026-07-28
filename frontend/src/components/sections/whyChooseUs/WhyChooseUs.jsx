@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
             <div className="container">
                 <div className="grid items-center gap-16 lg:grid-cols-2">
                     {/* Left */}
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-up">
                         <SectionHeader
                             align="left"
                             subtitle={WHY_CHOOSE_US.subtitle}
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
                         </div>
                     </div>
                     {/* Right */}
-                    <div data-aos="fade-left">
+                    <div data-aos="fade-up">
                         <img
                             src={WHY_CHOOSE_US.image}
                             alt={WHY_CHOOSE_US.title}

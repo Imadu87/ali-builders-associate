@@ -7,7 +7,7 @@ const AboutSection = () => {
         <section className="section bg-light">
             <div className="container">
 
-                <div data-aos="fade-right" className="grid items-center gap-12 lg:grid-cols-2">
+                <div data-aos="fade-up" className="grid items-center gap-12 lg:grid-cols-2">
 
                     {/* Left Content */}
 
@@ -52,11 +52,13 @@ const AboutSection = () => {
 
                     {/* Right Image */}
 
-                    <div data-aos="fade-left" className="relative">
+                    <div data-aos="fade-up" className="relative">
 
                         <img
                             src={ABOUT_DATA.image}
                             alt="About Ali Builders"
+                            loading="lazy"
+                            decoding="async"
                             className="h-full w-full rounded-xl object-cover shadow-primary"
                         />
 

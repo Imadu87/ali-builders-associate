@@ -19,6 +19,8 @@ const ProjectCard = ({
                 <img
                     src={image}
                     alt={title}
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                 />
                 {/* Overlay */}

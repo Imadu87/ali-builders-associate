@@ -24,6 +24,8 @@ const ClientCard = ({
             <img
                 src={image}
                 alt={name}
+                loading="lazy"
+                decoding="async"
                 className="
                     mx-auto
                     mb-6

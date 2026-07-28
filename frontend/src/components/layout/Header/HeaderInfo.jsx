@@ -11,16 +11,18 @@ const HeaderInfo = () => {
             <div className="container flex flex-col items-center justify-between gap-6 lg:flex-row">
 
                 {/* Logo */}
-                <div data-aos="fade-right" className="shrink-0">
+                <div data-aos="fade-up" className="shrink-0">
                     <img
                         src={COMPANY.logo}
                         alt={COMPANY.name}
+                        loading="lazy"
+                        decoding="async"
                         className="h-16 lg:h-20 w-auto"
                     />
                 </div>
 
                 {/* Contact Info */}
-                <div data-aos="fade-left" className="hidden md:flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-8 lg:gap-10">
+                <div data-aos="fade-up" className="hidden md:flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-8 lg:gap-10">
 
                     <ContactInfoCard
                         icon={<FiPhoneCall />}

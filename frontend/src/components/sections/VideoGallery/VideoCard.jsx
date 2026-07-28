@@ -16,6 +16,7 @@ const VideoCard = ({
             <img
                 src={thumbnail}
                 alt={title}
+                loading="lazy"
                 className="h-72 w-full object-cover transition duration-500 group-hover:scale-110"
             />
 

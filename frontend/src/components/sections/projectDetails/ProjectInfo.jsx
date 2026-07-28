@@ -22,17 +22,19 @@ const ProjectInfo = ({ project }) => {
 
           {/* Image */}
 
-          <div data-aos="fade-right">
+          <div data-aos="fade-up">
             <img
               src={project.image}
               alt={project.title}
+              loading="lazy"
+              decoding="async"
               className="h-full w-full rounded-xl object-cover shadow-primary"
             />
           </div>
 
           {/* Details */}
 
-          <div data-aos="fade-left" className="flex flex-col justify-center">
+          <div data-aos="fade-up" className="flex flex-col justify-center">
 
             <div className="space-y-6">
 
@@ -88,6 +90,8 @@ const ProjectInfo = ({ project }) => {
               <iframe
                 src={project.googleMap}
                 title={project.title}
+                loading="lazy"
+                decoding="async"
                 width="100%"
                 height="300"
                 loading="lazy"

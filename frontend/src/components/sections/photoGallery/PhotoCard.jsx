@@ -15,6 +15,8 @@ const PhotoCard = ({ image, onClick, animationDelay }) => {
             <img
                 src={image}
                 alt="Gallery"
+                loading="lazy"
+                decoding="async"
                 className="
                     h-72
                     w-full

@@ -19,17 +19,19 @@ const TeamProfile = ({ member }) => {
 
                     {/* Image */}
 
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-up">
                         <img
                             src={member.image}
                             alt={member.name}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full rounded-xl shadow-primary object-cover"
                         />
                     </div>
 
                     {/* Content */}
 
-                    <div data-aos="fade-left">
+                    <div data-aos="fade-up">
 
                         <SectionHeader
                             align="left"

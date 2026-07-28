@@ -63,6 +63,7 @@
   }
 
   body {
+    overflow-x: clip;
     font-family: var(--font-montserrat);
     color: var(--color-text);
     background: var(--color-white);

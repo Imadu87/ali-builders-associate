@@ -13,7 +13,7 @@ const ContactForm = () => {
 
                     {/* Contact Form */}
 
-                    <div data-aos="fade-right" className="rounded-xl bg-white p-8 shadow-primary">
+                    <div data-aos="fade-up" className="rounded-xl bg-white p-8 shadow-primary">
 
                         <h2 className="mb-8 text-3xl font-bold text-heading">
                             {CONTACT_DATA.form.title}
@@ -61,7 +61,7 @@ const ContactForm = () => {
 
                     {/* Google Map */}
 
-                    <div  data-aos="fade-left" className="rounded-xl overflow-hidden shadow-primary">
+                    <div  data-aos="fade-up" className="rounded-xl overflow-hidden shadow-primary">
 
                         <iframe
                             src={COMPANY.contact.map}

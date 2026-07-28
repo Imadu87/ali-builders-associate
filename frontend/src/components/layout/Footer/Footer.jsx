@@ -17,10 +17,12 @@ const Footer = () => {
 
           {/* About */}
 
-          <div data-aos="fade-right">
+          <div data-aos="fade-up">
             <img
               src={COMPANY.logo}
               alt={COMPANY.name}
+              loading="lazy"
+              decoding="async"
               className="mb-6 h-20 object-contain"
             />
 
@@ -92,7 +94,7 @@ const Footer = () => {
           {/* Services */}
 
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="200"
           >
             <h3 className="mb-6 text-2xl font-semibold">
