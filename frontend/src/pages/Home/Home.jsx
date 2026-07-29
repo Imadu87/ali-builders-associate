@@ -1,5 +1,5 @@
 import Hero from "../../components/home/Hero/Hero"
-import CEOMessage from "../../components/sections/ceoMessage/CEOMessage"
+import Leadership from "../../components/sections/leadership/Leadership"
 import AboutSection from "../../components/sections/about/AboutSection"
 import StatsSection from "../../components/sections/stats/StatsSection"
 import ServicesSection from "../../components/sections/services/ServicesSection"
@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <CEOMessage />
+            <Leadership />
             <AboutSection />
             <StatsSection />
             <ServicesSection limit={4} showButton={true} />
